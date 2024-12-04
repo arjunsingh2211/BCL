@@ -1,21 +1,6 @@
 import React from 'react';
 
 export default function Home() {
-    const styles = {
-        heading1: {
-            fontFamily: "'Libre Baskerville', sans-serif",
-            fontSize: '57px',
-        },
-        para1: {
-            fontFamily: "'Libre Baskerville', sans-serif",
-            fontSize: '25px',
-        },
-        para2: {
-            fontFamily: "'Libre Baskerville', sans-serif",
-            fontSize: '18px',
-            textAlign: 'center',
-        },
-    };
 
     return (
         <div className="container">

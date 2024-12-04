@@ -1,21 +1,6 @@
 import React from 'react'
 
 export default function AboutUs() {
-    const styles = {
-        heading1: {
-            fontFamily: "'Libre Baskerville', sans-serif",
-            fontSize: '57px',
-        },
-        para1: {
-            fontFamily: "'Droid Sans', arial, sans-serif",
-            fontSize: '25px',
-        },
-        para2: {
-            fontFamily: "'Droid Sans', arial, sans-serif",
-            fontSize: '18px',
-            textAlign: 'center',
-        },
-    };
 
   return (
     <div>
