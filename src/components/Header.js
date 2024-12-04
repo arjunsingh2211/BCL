@@ -25,7 +25,6 @@ export default function Header() {
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item ms-lg-4">
                                     <Link className="nav-link" aria-current="page" to="/">Home</Link>
-                                    <h1>hiii</h1>
                                 </li>
                                 <li className="nav-item ms-lg-4">
                                     <Link className="nav-link" to="/services">Services</Link>
