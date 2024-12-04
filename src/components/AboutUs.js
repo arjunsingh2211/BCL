@@ -4,7 +4,7 @@ export default function AboutUs() {
 
   return (
     <div>
-       <h1 className='heading2'>About us</h1>
+       <h1 className='heading2'>About more us</h1>
 
 <div className="container">
     <div className="row justify-content-center g-4">
