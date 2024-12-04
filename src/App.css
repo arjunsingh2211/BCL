@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Droid+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+
+
+.heading2 {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading3 {
+    font-family: 'Libre Baskerville', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imgStyle {
+    max-width: 100%;
+    height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.para2 {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 18px;
+    text-align: center;
 }
