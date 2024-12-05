@@ -13,13 +13,13 @@ export default function ContactUs() {
                     }}>Let us tailor a service package that meets your needs. Tell us a little about your business, and we will get back to you with some ideas as soon as possible.</p>
                     <br />
 
-                    <h4>Twin-Code Solutions</h4>
+                    <h4>Binary Code Labs</h4>
                     <p className='para2' style={{
                         textAlign: 'left',
                         lineHeight: '30px',
-                    }}>The Ripple, Bangalore</p>
+                    }}>#112, Discourse, 186/2 12th ward Muthanallur cross, Dommasandra village, Sarjapur - Marathahalli Rd, Bengaluru, Karnataka 562125</p>
                     <br />
-                    <span>8871169615</span>
+                    <span>M.no: 8871169615</span>
                     <br /><br />
 
                     <h4>Hours</h4>
