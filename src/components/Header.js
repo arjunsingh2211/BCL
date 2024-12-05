@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
     const styles = {
         navItems: {
-            fontFamily: "'Libre Baskerville', sans-serif",
+            fontFamily: "'Satoshi', sans-serif",
             fontSize: '21px',
         },
     };

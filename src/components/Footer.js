@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="mt-5">
+    <footer style={{fontFamily: "Satoshi, sans-serif"}} className="mt-5">
       <div className="container">
         <hr />
         <p className="text-center my-3">

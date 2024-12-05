@@ -6,7 +6,7 @@
 
 
 .heading2 {
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: 'Satoshi', sans-serif;
     font-size: 25px;
     text-align: center;
     margin-top: 5rem;
@@ -14,7 +14,7 @@
 }
 
 .heading3 {
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: 'Satoshi', sans-serif;
 }
 
 .imgStyle {
@@ -23,7 +23,24 @@
 }
 
 .para2 {
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: 'Satoshi', sans-serif;
     font-size: 18px;
     text-align: center;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./assets/fonts/OTF/Satoshi-Regular.otf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./assets/fonts/OTF/Satoshi-Bold.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    font-family: 'Satoshi', sans-serif;
 }
