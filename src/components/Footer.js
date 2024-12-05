@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <hr />
         <p className="text-center my-3">
-          Copyright © 2024 bcltech.com <br/> All Rights Reserved.
+          Copyright © 2024 binarycodelabs.in <br/> All Rights Reserved.
         </p>
       </div>
     </footer>
