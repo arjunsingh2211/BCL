@@ -8,7 +8,7 @@ export default function Services() {
 
             <div className="row justify-content-center">
                 <div className="col-md-4">
-                    <img className='imgStyle' src="/images/tech7.jpg" alt="tech" />
+                    <img className='imgStyle' src="/images/tech23.png" alt="tech" />
                 </div>
                 <div className="col-md-4 my-5 text-center">
                     <h4 className='heading3'>Design and Development</h4>
@@ -23,7 +23,7 @@ export default function Services() {
                 </div>
 
                 <div className="col-md-4">
-                    <img className='imgStyle' src="/images/tech8.jpg" alt="tech" />
+                    <img className='imgStyle' src="/images/tech24.jpg" alt="tech" />
                 </div>
                 
             </div>

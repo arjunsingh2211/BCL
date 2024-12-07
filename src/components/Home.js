@@ -14,7 +14,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="col-md-8">
-                    <img src="/images/tech.png" alt="demo" className='imgStyle' />
+                    <img src="/images/tech1n.jpg" alt="demo" className='imgStyle' />
                 </div>
             </div>
                       
