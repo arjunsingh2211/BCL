@@ -3,33 +3,42 @@ import base_url from "./../api/bootapi";
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {  PuffLoader } from 'react-spinners';
 
 export default function ContactUs() {
 
     // function to save Message
     const[formData, setFormData]= useState({
         name:"",
+        phoneNumber: '',
         email:"",
         message:""
     });
 
+    // State to handle loading and spinner visibility
+    const[loading, setLoading] = useState(false);
+
     // form handler function to post data on server
     const handleSubmit =async (e) =>{
         e.preventDefault();
-        if(!formData.name || !formData.email || !formData.message){
+        if(!formData.name || !formData.phoneNumber || !formData.email || !formData.message){
             toast.error("All fields are required.");
             return;
         }
+        setLoading(true);
         try {
             await axios.post(`${base_url}/addUser`, formData);
+            setLoading(false);
             toast.success("Request Submitted Successfully");
             // Clear form data after submission
             setFormData({
                 name: '',
+                phoneNumber: '',
                 email: '',
                 message: ''
             });
         } catch (error) {
+            setLoading(false);
             console.error('Error submitting form:', error)
             toast.error("Failed to submit the form. Please try again.");
         }
@@ -71,6 +80,13 @@ export default function ContactUs() {
                             }} />
                         </div>
                         <div className="mb-3">
+                            <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
+                            <input type="tel" className="form-control" id="phoneNumber" value={formData.phoneNumber} maxLength={10} pattern='[0-9]{10}'
+                            onChange={(e) => {
+                                setFormData({ ...formData, phoneNumber: e.target.value});
+                            }} />
+                        </div>
+                        <div className="mb-3">
                             <label htmlFor="email" className="form-label">Email address</label>
                             <input type="email" className="form-control" id="email" value={formData.email}
                             onChange={(e) => {
@@ -86,7 +102,12 @@ export default function ContactUs() {
                         </div>
                         <button type="submit" className="btn btn-primary">Submit</button>
                     </form>
-
+                            {/* Show the loader when loading is true */}
+                            {loading && (
+                                <div className='loader-overlay'>
+                                    <PuffLoader color='#000' size={100} loading={loading}/>
+                                </div>
+                            )}
                 </div>
 
                 <div className="col-md-6">
