@@ -1,0 +1,36 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+  pre_build:
+    commands:
+      - echo Running pre-build commands...
+      - npm install -g serve
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Installing dependencies for production...
+      - npm prune --production
+      # Copying necessary files to the build directory
+      - cp Procfile build/
+      - cp package.json build/
+      - cp server.js build/
+
+artifacts:
+  files:
+    - '**/*'
+    - 'Procfile'
+    - 'package.json'
+    - 'server.js'
+  base-directory: build
+
+cache:
+  paths:
+    - node_modules/**/*
